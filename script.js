@@ -158,3 +158,32 @@ window.addEventListener("load", () => {
   });
 });
 
+
+// lightmode darkmode shit
+
+// Get the theme toggle switch and theme stylesheet link
+const themeToggle = document.getElementById("theme-toggle");
+const themeStylesheet = document.getElementById("theme-stylesheet");
+
+// Check the user's preference from localStorage, if available
+const isDarkMode = localStorage.getItem("isDarkMode");
+
+// Initialize the theme based on the user's preference
+if (isDarkMode === "true") {
+  themeToggle.checked = true;
+  themeStylesheet.href = "dark-theme.css";
+} else {
+  themeToggle.checked = false;
+  themeStylesheet.href = "light-theme.css";
+}
+
+// Event listener to toggle the theme
+themeToggle.addEventListener("change", () => {
+  if (themeToggle.checked) {
+    themeStylesheet.href = "dark-theme.css";
+    localStorage.setItem("isDarkMode", "true");
+  } else {
+    themeStylesheet.href = "light-theme.css";
+    localStorage.setItem("isDarkMode", "false");
+  }
+});

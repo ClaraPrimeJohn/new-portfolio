@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="modes.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="Assets/tab-icon.png" type="image/x-icon"/>
+    <link id="theme-stylesheet" href="styles.css" rel="stylesheet">
 
     <title>My Portfolio</title>
 </head>
@@ -41,13 +42,9 @@
         </nav>
     </header> -->
    
- <header class="header">
+    <header class="header">
        
         <a href="https://youtube.com/shorts/8dlAJEAW6D8?si=6Lu8nkRoge7vcONv" class="logo">OKTOPUS PRIME</a>
-        <!-- <label class="switch">
-            <input type="checkbox" id="theme-toggle">
-            <span class="slider"></span>
-        </label> -->
         <input type="checkbox" id="check">
         <label for="check" class="icons">
             <i class='bx bx-menu' id="menu-icon"></i>
@@ -55,7 +52,12 @@
             
         </label>
         
-    
+        <div class="switch-container">
+            <label class="switch">
+                            <input type="checkbox" id="theme-toggle">
+                            <span class="slider"></span>
+                          </label>
+              </div>
 
         <nav class="navbar">
             <a href="#intro" style="--i:0;">HOME</a>
@@ -202,7 +204,7 @@
                         </div>
                         <h3>C++</h3>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quis blanditiis totam qui culpa. Eius, autem minima explicabo quam libero repellendus iure, laborum officiis quas delectus a sit pariatur quia?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur a</p>
                 </div>
             </div>
         </div>
@@ -246,7 +248,7 @@
     </div>
     <div class="contact-form">
         <form method="POST" 
-        action="https://claraprimejohn.github.io/new-portfolio/">
+        action="YOUR_WEBAPP_URL">
         <input type="text" placeholder="Your name" required>
         <input type="email" placeholder="Email Addres.." required>
         <textarea name="message" id="" cols="30" rows="10" placeholder="Write Message Here.." required></textarea>
@@ -278,6 +280,8 @@
 
 
 </div>
+
+
 <script src="script.js"></script>
 </main>
 </body>

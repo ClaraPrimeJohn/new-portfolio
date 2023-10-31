@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Heebo:wght@100;300;400;600;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&display=swap');
+
+html {
+  cursor: url(./Assets/rowa.png), auto;
+}
+
+body {
+  font-family: 'Crimson Text', serif;
+  background-color: #4B4453; /* Dark background color for dark mode */
+  color: #FFF6FF; /* Light text color for dark mode */
+}
+
+/* Your other CSS rules remain mostly the same, with background and text color changes where necessary. */
+
+/* header and other background colors */
+/* Change background colors and text colors as needed */
+
+#intro {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh;
+}
+
+.header {
+
+  border-bottom: 2.5px solid #4B4453;
+}
+
+.profile img {
+  border-radius: 20%;
+}
+
+.profile-container {
+  display: flex;
+  max-width: 80%;
+  align-items: center;
+}
+
+.profile {
+  margin-right: 20px;
+}
+
+/* Change text color for dark mode */
+#projects {
+  color: #FFF6FF;
+}
+
+
+/* Accordion */
+/* Change background and text colors for dark mode */
+.accordion {
+  background-color: #220373;
+  color: #FFF6FF;
+}
+
+.active, .accordion:hover {
+  background-color: #9668E2;
+}
+
+/* Change the background color and text color for dark mode */
+.panel {
+  background-color: #444;
+  color: #FFF6FF;
+}
+
+/* Change text colors for dark mode */
+.panel p.panels {
+  color: #FFF6FF;
+}
+
+/* About */
+/* Change text colors for dark mode */
+.name {
+  color: #FFF6FF;
+}
+
+.grade {
+  color: #FF9971;
+}
+
+/* Projects */
+/* Change background color for dark mode */
+.project {
+  background-color: #220373;
+  border: 1px solid #444;
+}
+
+/* Change text colors for dark mode */
+.come, .proyekto {
+  color: #FF9971;
+}
+
+/* Change button colors for dark mode */
+.view-project-button {
+  background-color: #9668E2;
+  color: #FFF6FF;
+}
+.view-project-button:hover {
+  background-color: #9668E2;
+  color: #FFF6FF;
+}
+
+/* Toggle switch light mode dark mode */
+/* Colors for the switch and slider in dark mode */
+.switch {
+  background: transparent;
+}
+
+.slider {
+  background: #FFCA5D;
+}
+
+.slider:before {
+  background-color: #220373;
+}
+
+/* Colors for the toggle switch in dark mode */
+.switch input:checked + .slider {
+  background: #1B1B1B;
+}
+
+/* Colors for the toggle switch when checked in dark mode */
+.switch input:checked + .slider:before {
+  background-color: #FBEAFF;
+}
+
+/* Navbar at the bottom */
+/* Change background and text colors for dark mode */
+.navbar {
+  background-color: #220373;
+  color: #FFF6FF;
+}
+
+/* Icons in the navbar */
+.navbar a i {
+  color: #FFF6FF;
+}
+
+/* Skills */
+/* Change background and text colors for dark mode */
+#skills {
+  color: #FFF6FF;
+}
+#skills h3{
+  color: #9668E2;
+}
+#skills p{
+  color: #FFF6FF;
+}
+
+
+
+.header-skills {
+  color: #FF9971;
+}
+
+/* Change text colors for dark mode */
+.skill-title h3 {
+  color: #FFF6FF;
+}
+
+/* Certificates */
+/* Change background color for dark mode */
+.certificates {
+  background: linear-gradient(to left top, #220373, #9668E2);
+  border-radius: 8px;
+}
+
+/* Change text colors for dark mode */
+.comecert, .proyektocert {
+  color: #FF9971;
+}
+
+/* Header and Navbar at the top */
+/* Change background and text colors for dark mode */
+.header {
+  background: #4B4453;
+  color: #FFF6FF;
+}
+
+/* Icons in the header */
+.icons {
+  color: #FFF6FF;
+}
+
+
+.card h2{
+  color: #000;
+}
+/* Contact Form */
+/* Change background and text colors for dark mode */
+.contact-form {
+  background: #220373;
+  color: #FFF6FF;
+}
+
+/* Form input fields */
+form input,
+form textarea {
+  background: #444;
+  color: #FFF6FF;
+  box-shadow: 0 0 5px #9668E2;
+}
+
+/* Form placeholders */
+form input::placeholder,
+form textarea::placeholder {
+  color: #9668E2;
+}
+
+/* Send button colors for dark mode */
+form .send-btn {
+  background: #8B53FF;
+  color: #FF9971;
+  border: 2px solid #8B53FF;
+}
+
+/* Footer */
+/* Change background and text colors for dark mode */
+.footer {
+  background: #220373;
+  color: #FFF6FF;
+}
+
+/* Scroll-top button */
+.scroll-top i {
+  background: #8B53FF;
+}
+
+.contact-form form{
+  background-color: #4B4453;
+}
+
+.contact-form{
+  background-color: #4B4453;
+}
+
+

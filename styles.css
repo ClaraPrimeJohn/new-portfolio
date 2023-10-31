@@ -14,7 +14,6 @@ body{
 }
 
 #intro{
-    padding-top: 20px;
     display: flex;
     justify-content: center;
     height: 100vh;
@@ -108,40 +107,59 @@ main{
 /* Accordion */
 
 .accordion {
-    background-color: #9668E2;
-    color: #444;
-    cursor: pointer;
-    width: 100%;
-    height: 50px;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-  }
+  background-color: #9668E2;
+  color: #444;
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+  z-index: 1;
+  border-radius: 5px;
+}
 
+.accordion::before {
+  content: "\25BC"; 
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%) rotate(0deg);
+  font-size: 24px;
+  transition: 0.4s;
+}
 
-  .active, .accordion:hover {
-    background-color: #FF7098;
-    cursor: url(Assets/terpoin.png), auto;
-  }
-  
-  .panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
-    transition: max-height 0.2s ease-in-out;
-  }
-  .panel p.panels {
-    white-space: normal; 
-    max-width: 100%; 
-  }
-  .active + .panel {
-    max-height: 200px;
-  }
+.active, .accordion:hover {
+  background-color: #FF7098;
+  cursor: url(Assets/terpoin.png), auto;
+}
+
+.active::before, .accordion:hover::before {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+  border-radius: 0 0 5px 5px;
+}
+
+.panel p.panels {
+  white-space: normal;
+  max-width: 100%;
+}
+
+.active + .panel {
+  max-height: 200px;
+}
+
   
 
   /*Education*/
@@ -226,8 +244,12 @@ main{
     font-size: 17px;
     position: relative;
     display: inline-block;
-    width: 3em;
-    height: 1.5em;
+    width: 1.5em;
+    height: 3em;
+  }
+
+  .slider:hover{
+    cursor: url(Assets/terpoin.png), auto;
   }
   
   /* Hide default HTML checkbox */
@@ -263,7 +285,7 @@ main{
   }
   
   .switch input:checked + .slider {
-    background: #444;
+    background: black;
   }
   
   .switch input:focus + .slider {
@@ -271,8 +293,17 @@ main{
   }
   
   .switch input:checked + .slider:before {
-    transform: translateX(1.6em);
+    transform: translateY(1.6em);
   }
+
+
+  .switch-container {
+    position: absolute;
+    top: 0; 
+    right: 0; 
+    padding: 10px;
+    margin-right: 10px;
+}
 
 
    
@@ -450,8 +481,9 @@ main{
   padding: 0 35px;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 70vh;
   background: linear-gradient(to left top, #220373, #9668E2);
+  border-radius: 8px;
 }
 .wrapper {
   max-width: 1100px;
@@ -692,7 +724,9 @@ form .send-btn{
   font-size: 15px;
   font-weight: 600;
   transition: all .50s ease;
-  width: 32%;
+  width: 33%;
+  align-items: center;
+  justify-content: center;
 }
 
 form .send-btn:hover{
@@ -775,3 +809,9 @@ form .send-btn:hover{
     transform: rotate(1turn);
   }
 }
+
+/* piksol */
+#intro, #education, #projects, #skills, #certificates, .footer {
+  margin: auto;
+}
+
