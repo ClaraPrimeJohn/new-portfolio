@@ -103,6 +103,11 @@ body {
   color: #FFF6FF;
 }
 
+.child:hover {
+  background-color: #FBEAFF;
+  box-shadow: 0px 10px 10px #FF7098;
+}
+
 /* Toggle switch light mode dark mode */
 /* Colors for the switch and slider in dark mode */
 .switch {
@@ -115,6 +120,7 @@ body {
 
 .slider:before {
   background-color: #220373;
+  content: "🌙";
 }
 
 /* Colors for the toggle switch in dark mode */
