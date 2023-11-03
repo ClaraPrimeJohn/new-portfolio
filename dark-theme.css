@@ -116,6 +116,7 @@ body {
 
 .slider {
   background: #FFCA5D;
+  z-index: 100;
 }
 
 .slider:before {
