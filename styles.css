@@ -162,7 +162,9 @@ main{
   max-height: 200px;
 }
 
-  
+  .panels{
+  font-size: 1.5rem;
+}
 
   /*Education*/
   #education {
@@ -254,7 +256,6 @@ main{
     cursor: url(Assets/terpoin.png), auto;
   }
   
-  /* Hide default HTML checkbox */
   .switch input {
     opacity: 0;
     width: 0;
