@@ -14,6 +14,8 @@ body {
 
 
 
+/* header and other background colors */
+
 #intro {
   display: flex;
   justify-content: center;
@@ -47,6 +49,7 @@ body {
 
 
 /* Accordion */
+
 .accordion {
   background-color: #220373;
   color: #FFF6FF;
@@ -56,16 +59,19 @@ body {
   background-color: #9668E2;
 }
 
+
 .panel {
   background-color: #444;
   color: #FFF6FF;
 }
+
 
 .panel p.panels {
   color: #FFF6FF;
 }
 
 /* About */
+
 .name {
   color: #FFF6FF;
 }
@@ -75,22 +81,26 @@ body {
 }
 
 /* Projects */
+
 .project {
   background-color: #220373;
   border: 1px solid #444;
 }
 
+
 .come, .proyekto {
   color: #FF9971;
 }
 
+
 .view-project-button {
   background-color: #9668E2;
-  color: #FFF6FF;
+  color: black;
 }
 .view-project-button:hover {
-  background-color: #9668E2;
-  color: #FFF6FF;
+  background-color: #9668E2; 
+  cursor: url(Assets/terpoin.png), auto;
+  transform: scale(1.1);
 }
 
 .child:hover {
@@ -98,20 +108,20 @@ body {
   box-shadow: 0px 10px 10px #FF7098;
 }
 
-/* Toggle switch light mode dark mode */
+
 .switch {
   background: transparent;
 }
 
 .slider {
   background: #FFCA5D;
-  z-index: 100;
 }
 
 .slider:before {
   background-color: #220373;
   content: "🌙";
 }
+
 
 .switch input:checked + .slider {
   background: #1B1B1B;
@@ -121,13 +131,12 @@ body {
   background-color: #FBEAFF;
 }
 
-/* Navbar sheesh*/
 .navbar {
   background-color: #220373;
   color: #FFF6FF;
 }
 
-/* Icons in the navbar */
+
 .navbar a i {
   color: #FFF6FF;
 }
@@ -143,44 +152,53 @@ body {
   color: #FFF6FF;
 }
 
-
+section header{
+  color: #9668E2;
+}
 
 .header-skills {
   color: #FF9971;
 }
+
 
 .skill-title h3 {
   color: #FFF6FF;
 }
 
 /* Certificates */
+
 .certificates {
-  background: linear-gradient(to left top, #220373, #9668E2);
+  background: linear-gradient(to left top, #30069c, #6731be);
   border-radius: 8px;
 }
+
 
 .comecert, .proyektocert {
   color: #FF9971;
 }
 
-/* Header and navbar*/
+/* Header and Navbar at the top */
 .header {
   background: #4B4453;
   color: #FFF6FF;
 }
 
+/* Icons in the header */
 .icons {
   color: #FFF6FF;
 }
+
 
 .card h2{
   color: #000;
 }
 /* Contact Form */
+
 .contact-form {
   background: #220373;
   color: #FFF6FF;
 }
+
 
 form input,
 form textarea {
@@ -189,10 +207,12 @@ form textarea {
   box-shadow: 0 0 5px #9668E2;
 }
 
+
 form input::placeholder,
 form textarea::placeholder {
   color: #9668E2;
 }
+
 
 form .send-btn {
   background: #8B53FF;
@@ -200,7 +220,11 @@ form .send-btn {
   border: 2px solid #8B53FF;
 }
 
-/* Paater */
+form .send-btn:hover{
+  color: #FF7098;
+}
+
+/* Footer */
 .footer {
   background: #220373;
   color: #FFF6FF;
@@ -219,4 +243,35 @@ form .send-btn {
   background-color: #4B4453;
 }
 
+
+section header{
+  color: #9668E2;
+}
+
+.skill .set{
+  background-color: #220373;
+}
+
+.skill .set:hover{
+  box-shadow: 0px 12px 16px #FF7098;
+  cursor: url(Assets/terpoin.png), auto;
+}
+
+.set span{
+  background-color: #220373;
+  color: #FF9971;
+}
+
+.set header{
+  color: white;
+}
+
+.set .list{
+
+  color: #afacac;
+}
+
+.set:hover .list{
+  color: white;
+}
 

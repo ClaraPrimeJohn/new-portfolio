@@ -135,6 +135,10 @@ main{
   transition: 0.4s;
 }
 
+.panels{
+  font-size: 1.5rem;
+}
+
 .active, .accordion:hover {
   background-color: #FF7098;
   cursor: url(Assets/terpoin.png), auto;
@@ -162,9 +166,7 @@ main{
   max-height: 200px;
 }
 
-  .panels{
-  font-size: 1.5rem;
-}
+  
 
   /*Education*/
   #education {
@@ -220,8 +222,8 @@ main{
 /*project buttons*/
 
 .view-project-button {
-    background-color: #C3ACE1; 
-    color: black; 
+    background-color: #7436f0; 
+    color: white; 
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -237,7 +239,7 @@ main{
   }
   
   .view-project-button:hover {
-    background-color: #9668E2; 
+    background-color: #7436f0; 
     cursor: url(Assets/terpoin.png), auto;
     transform: scale(1.1);
   }
@@ -256,6 +258,7 @@ main{
     cursor: url(Assets/terpoin.png), auto;
   }
   
+  /* Hide default HTML checkbox */
   .switch input {
     opacity: 0;
     width: 0;
@@ -270,7 +273,7 @@ main{
     background: #FFCA5D;
     border-radius: 50px;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    z-index: 100;
+    
   }
   
   .slider:before {
@@ -348,7 +351,7 @@ main{
 
 
  /* skills */
-
+/* 
  #skills{
   padding: 0;
   margin: 0;
@@ -405,7 +408,7 @@ main{
   margin-bottom: 0.5rem;
  }
 
- /* .skill-title:after{
+ .skill-title:after{
   content: '';
   position: absolute;
   bottom: 0;
@@ -427,7 +430,7 @@ main{
   border-radius: 0 2px 2px 0;
   background-color: #FBEAFF;
   transition: 0.5s;
- } */
+ }
 
  .imgskill{
   width: 90px;
@@ -468,9 +471,82 @@ main{
   transform: scale(1.2);
 }
 
+ */
 
+/* new skills */
+ .header-skills{
+  text-align: center;
+  color: #FF9971;
+  padding: 1rem;
+  position: relative;
+ }
 
+ section header{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0;
+  font-weight: bold;
+  color: #220373;
+ }
+.skill{
+  display: grid;
+  grid-gap: 16px;
+  padding: 16px;
+  width: 100%;
+  margin-inline: auto;
+}
 
+.skill .set{
+  background-color: #9668E2;
+  padding: 24px;
+  border-radius: 16px;
+
+}
+
+.skill .set:hover{
+  box-shadow: 0px 12px 16px #220373;
+  cursor: url(Assets/terpoin.png), auto;
+}
+
+.set span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  font-size: 48px;
+  background-color: #9668E2;
+  color: #190255;
+  border-radius: 35%;
+  margin-inline: auto;
+}
+
+.set header{
+  padding-block: 24px;
+  font-size: 25px;
+  color: black;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.set .list{
+  padding-block: 14px;
+  display: grid;
+  grid-template-columns: 1fr 28px;
+  color: #2c2b2b;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.set:hover .list{
+  color: black;
+}
+
+.skill i:hover, label:hover{
+  cursor: url(Assets/terpoin.png), auto;
+
+}
 
  /* certificate */
 
@@ -598,9 +674,7 @@ main{
 .bx.bxs-left-arrow {
   color: #220373;
 }
-.certificates i:hover{
-  cursor: url(Assets/terpoin.png), auto;
-}
+
 .comecert {
   font-size: 24px;
   color: #9668E2; 
@@ -612,6 +686,9 @@ main{
   color: #FF9971; 
 }
 
+.certificates i:hover{
+  cursor: url(Assets/terpoin.png), auto;
+}
 /* nav hamburger sa taas */
 
 *{

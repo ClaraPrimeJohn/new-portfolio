@@ -1,11 +1,11 @@
-@media (max-width: 820px) {
+@media (max-width: 1000px) {
     .project {
         width: 100%;
     }
     
     .icons{
       display: inline-flex;
-      margin-right: 40px;
+      padding-right: 12%;
       }
   
       #check:checked~.icons #menu-icon{
@@ -19,7 +19,7 @@
   
       #check:checked~.icons #close-icon{
           display: block;
-          margin-right: 15px;
+          padding-right: 20%px;
   
       }
   
@@ -41,11 +41,11 @@
 
       .switch-container {
         position: relative;
-        margin-right: 5px;
+        margin-right: 5%px;
         
       }
     
-    .panels{
+      .panels{
         font-size: 1.2rem;
       }
   
@@ -64,6 +64,10 @@
           opacity: 1;
           transition-delay: calc(.15s * var(--i));
          
+      }
+
+      .header{
+        width: 100%;
       }
     /* header, .container{
       width: 100%;
@@ -189,6 +193,8 @@ form .send-btn{
     font-size: 9px;
 }
 
+
+
   /* header, .container {
       width: 100%;
   }
@@ -210,10 +216,24 @@ form .send-btn{
       font-size: 18px;
   } */
 }
+@media  (min-width: 415px) {
+    .skill{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
+@media (max-width: 629px) {
+    .skill{
+        grid-template-columns: 1fr;
+    }
+    #intro, #education, #projects, #skills, #certificates, #contact{
+        width: 100%;
+    }
+    
+}
 @media (max-width: 990px){
     .container-skills{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         padding: 2rem 50px;
     }
 
