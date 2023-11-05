@@ -598,7 +598,9 @@ main{
 .bx.bxs-left-arrow {
   color: #220373;
 }
-
+.certificates i:hover{
+  cursor: url(Assets/terpoin.png), auto;
+}
 .comecert {
   font-size: 24px;
   color: #9668E2; 
