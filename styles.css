@@ -182,10 +182,10 @@ main{
 /* Projects */
 
 #projects {
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 50px;
     text-align: center; 
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .button-group{
@@ -523,7 +523,6 @@ div.gallery .item:hover img{
  
 section{
   width: 100%;
-  min-height: 100vh;
   justify-content: center;
   align-items: center;
 }
