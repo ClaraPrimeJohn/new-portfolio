@@ -7,7 +7,7 @@ form.addEventListener('submit', e => {
  e.preventDefault()
  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
  .then(response => Swal.fire({
-  position: "top-end",
+  position: "center",
   icon: "success",
   title: "Thankyou for getting in touch with me!",
   showConfirmButton: false,
