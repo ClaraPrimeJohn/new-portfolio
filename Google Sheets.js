@@ -6,18 +6,18 @@ const form = document.forms['contact-form']
 form.addEventListener('submit', e => {
   e.preventDefault()
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-  .then(response => Swal.fire({
+  .then(response => {Swal.fire({
     position: "top",
     icon: "success",
     title: "Message Succesfully Sent",
     showConfirmButton: false,
     timer: 1500
-  }))
+  })})
   .then(() => { window.location.reload(); })
-  .catch(error => Swal.fire({
+  .catch(error => {Swal.fire({
     icon: "error",
     title: "Oops...",
     text: "Something went wrong!",
     footer: '<a href="#">Why do I have this issue?</a>'
-  }))
+  })})
 })
