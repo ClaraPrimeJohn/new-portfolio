@@ -371,16 +371,14 @@
         <h1>Contact Form</h1>
     </div>
     <div class="contact-form">
-        <form method="POST" 
-        action="https://script.google.com/macros/s/AKfycbxfe45dCRYOowxnKUyL4yzt8KiepSSXHanzEUwkamgA8c7KAcrWg7PM8o9itqyGw-t5xA/exec">
-        <input type="text" name="name" placeholder="Your name" required>
-        <input type="email" name="email" placeholder="Email Addres.." required>
-        <textarea name="message" id="" cols="30" rows="10" placeholder="Write Message Here.." required></textarea>
-
-        </textarea>
-        <input type="submit" name="" value="Send Message" class="send-btn">
-    </form>
-    </div>
+        <form id="form" method="POST">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="Email Address" required>
+          <textarea name="message" cols="30" rows="10" placeholder="Write Message Here" required></textarea>
+          <input type="submit" id="submit" value="Send Message" class="send-btn">
+        </form>
+      </div>
+      
 </section>
 
 

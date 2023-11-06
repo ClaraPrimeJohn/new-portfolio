@@ -1,9 +1,7 @@
 // form
-
 const form = document.querySelector('#form');
 const submitButton = document.querySelector('#submit');
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxfe45dCRYOowxnKUyL4yzt8KiepSSXHanzEUwkamgA8c7KAcrWg7PM8o9itqyGw-t5xA/exec'
-
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxfe45dCRYOowxnKUyL4yzt8KiepSSXHanzEUwkamgA8c7KAcrWg7PM8o9itqyGw-t5xA/exec';
 
 form.addEventListener('submit', e => {
   e.preventDefault();
@@ -17,7 +15,7 @@ form.addEventListener('submit', e => {
           showConfirmButton: false,
           timer: 1500
         });
-        form.reset(); 
+        form.reset();
       } else {
         Swal.fire({
           icon: "error",
