@@ -9,7 +9,7 @@ form.addEventListener('submit', e => {
  .then(response => Swal.fire({
   position: "top-end",
   icon: "success",
-  title: "Your work has been saved",
+  title: "Thankyou for getting in touch",
   showConfirmButton: false,
   timer: 1500
 }))
@@ -18,7 +18,6 @@ form.addEventListener('submit', e => {
   icon: "error",
   title: "Oops...",
   text: "Something went wrong!",
-  footer: '<a href="#">Why do I have this issue?</a>'
 }))
 })
 
