@@ -1,7 +1,9 @@
 // form
+
+const form = document.querySelector('#form');
+const submitButton = document.querySelector('#submit');
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxfe45dCRYOowxnKUyL4yzt8KiepSSXHanzEUwkamgA8c7KAcrWg7PM8o9itqyGw-t5xA/exec'
 
-const form = document.querySelector('form');
 
 form.addEventListener('submit', e => {
   e.preventDefault();
