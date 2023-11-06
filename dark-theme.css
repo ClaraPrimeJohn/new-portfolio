@@ -226,7 +226,7 @@ section header{
 }
 /* Contact Form */
 
-.contact-form {
+.contact-forms {
   background: #220373;
   color: #FFF6FF;
 }
@@ -267,11 +267,11 @@ form .send-btn:hover{
   background: #8B53FF;
 }
 
-.contact-form form{
+.contact-forms form{
   background-color: #4B4453;
 }
 
-.contact-form{
+.contact-forms{
   background-color: #4B4453;
 }
 

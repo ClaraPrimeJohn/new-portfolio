@@ -184,8 +184,8 @@ main{
 #projects {
     margin: 0 auto;
     text-align: center; 
-    padding-top: 4.5rem;
-    padding-bottom: 4.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .button-group{
@@ -836,14 +836,14 @@ flex: 1;
 
 /* contact form */
 
-.contact-form{
+.contact-forms{
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 4.2rem;
 }
 
-.contact-form form{
+.contact-forms form{
   position: relative;
   width: 600px;
 }
