@@ -2,8 +2,36 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&display=swap');
 
+
+
 html {
-  cursor: url(./Assets/rowa.png), auto;
+  cursor: url(./Assets/rowad.png), auto;
+}
+
+.menu a:hover, 
+.logo a:hover, 
+.active, .accordion:hover, 
+.view-project-button a,
+.view-project-button:hover,
+.slider:hover,
+.skill .set:hover,
+.skill i:hover, label:hover,
+.carousel:hover,
+#left.fa-solid.fa-angle-left:hover,
+#right.fa-solid.fa-angle-right:hover,
+.certificates a:hover,
+.certificates i:hover,
+.navbar a:hover, 
+.logo:hover,
+.icons,
+form .send-btn:hover,
+.scroll-top i:hover,
+.button:hover,
+.parent a:hover, 
+.child:hover, 
+.parent svg:hover,
+#skill  .set:hover{
+  cursor: url(./Assets/terpoind.png), auto;
 }
 
 body {
@@ -82,9 +110,8 @@ body {
 
 /* Projects */
 
-.project {
-  background-color: #220373;
-  border: 1px solid #444;
+.project:hover{
+  cursor: url(Assets/terpoind.png), auto;
 }
 
 
@@ -99,13 +126,18 @@ body {
 }
 .view-project-button:hover {
   background-color: #9668E2; 
-  cursor: url(Assets/terpoin.png), auto;
+  cursor: url(Assets/terpoind.png), auto;
   transform: scale(1.1);
 }
 
 .child:hover {
   background-color: #FBEAFF;
   box-shadow: 0px 10px 10px #FF7098;
+}
+
+.tooltip {
+  background-color: white;
+  color: #000;
 }
 
 
@@ -254,7 +286,6 @@ section header{
 
 .skill .set:hover{
   box-shadow: 0px 12px 16px #FF7098;
-  cursor: url(Assets/terpoin.png), auto;
 }
 
 .set span{
@@ -275,3 +306,33 @@ section header{
   color: white;
 }
 
+
+
+.button-group .button.active{
+  background-color: #190255;
+  color: #FF7098;
+}
+
+.button-group .button:hover{
+  background-color: #FF7098;
+  color: black;
+  cursor: url(Assets/terpoind.png), auto;
+}
+
+.item .overlay{
+  background-color: rgba(166, 101, 240, 0.7);
+  color: black;
+  cursor: url(Assets/rowad.png), auto;
+}
+
+.item .overlay a{
+  border: 2px solid #190255;
+  color: #190255;
+  cursor: url(Assets/terpoind.png), auto;
+}
+
+.item .overlay a:hover{
+  background-color: #FF7098;
+  color: #220373;
+  cursor: url(Assets/terpoind.png), auto;
+}
