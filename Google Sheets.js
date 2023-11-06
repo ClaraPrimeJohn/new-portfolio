@@ -7,11 +7,11 @@ form.addEventListener('submit', e => {
  e.preventDefault()
  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
  .then(response => Swal.fire({
-  position: "top-end",
+  position: "center",
   icon: "success",
   title: "Thankyou for getting in touch",
   showConfirmButton: false,
-  timer: 1500
+  timer: 3000
 }))
  .then(() => { window.location.reload(); })
  .catch(error => Swal.fire({
